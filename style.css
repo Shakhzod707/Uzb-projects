@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: auto;
+    background-color: #F2F2F2;
+}
+
+main{
+    padding: 0 8rem;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: 5rem 8rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: #83888F;
+}
+
+nav div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+nav div:first-child img:first-child{
+    width: 50px;
+    height: 50px;
+}
+
+nav div:first-child img:last-child{
+    font-size: 2.4rem; 
+    color: black;
+}
+
+nav div:last-child{
+    display: flex;
+    column-gap: 3.3em;
+    align-items: centers;
+}
+
+nav a{
+    font-family: "Barlow";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: 1.5rem;
+    letter-spacing: 0.9230769276618958px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    nav{
+        width: 100vw;
+        flex-direction: column;
+        row-gap: 2rem;
+        align-items: center;
+}
+
+    nav div:last-child{
+        flex-direction: column;
+        row-gap: 2rem;
+        align-items: center;
+        font-family: "Fraunces" 9pt;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #333D4B;
+    }
+}
+
+main section:first-child{
+    background-image: url(Bitmap.jpg);
+    width: 83vw;
+    padding-bottom: 9rem;
+    margin-bottom: 11rem;
+}
+
+main section:first-child div{
+    padding: 0 8.6rem;
+}
+
+main section:first-child h1{
+    width: 50rem;
+    font-family: 'Fraunces', serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 1em;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FEFCF7;
+    padding-top: 11.7rem;
+    margin-bottom: 32px;
+    
+}
+
+main section:first-child p{
+    width: 400px;
+    font-family: "Barlow";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 1.8em;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FEFCF7;
+    padding-bottom: 7rem;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+main section:first-child button{
+    font-family: "Fraunces" 9pt;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    background-color:#66D2CF;
+    padding: 1.5rem 3.1rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 590px) {
+    main{
+        display: block;
+        padding: 0 4.5rem;
+    }
+
+    main section:first-child h1{
+        width: auto;
+    }
+
+    main section:first-child p{
+        width: auto;
+    }
+
+    main section:first-child h1{
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+}
+    main section:first-child button{
+        display: block;
+        margin: auto;
+    }
+}
+
+main section:nth-child(2){
+    position: relative;
+    padding-top: 15rem; 
+    padding-bottom: 18rem;
+}
+
+main section:nth-child(2) h2{
+    font-family: "Fraunces" 9pt;
+    font-size: 15rem;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 72px;
+    letter-spacing: 0px;
+    text-align: center;
+    background: linear-gradient(180deg,  #ffffff, #000000 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 2rem;
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 15%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+main section:nth-child(2) .section-2--flex-container div{
+    width: 255px;
+}
+
+main section:nth-child(2) .section-2--flex-container{
+    padding: 0 86px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main section:nth-child(2) img{
+    width: 255px;
+    height: 193px;
+    margin-bottom: 6.7rem;
+}
+
+main section:nth-child(2) h3{
+    font-family: "Fraunces" 9pt;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 1em;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #333D4B;
+    margin-bottom: 2.4rem;
+}
+
+main section:nth-child(2) p{
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    text-align: center;
+    color: #333D4B;
+}
+
+@media only screen and (max-width: 1378px) {
+main section:nth-child(2) h2{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 5%;
+    bottom: 0%;
+}
+
+main section:nth-child(2) h2{
+    padding-top: 8rem;
+    font-size: 9.6rem;
+    font-style: normal;
+    text-align: center;
+}
+
+main section:nth-child(2) .section-2--flex-container div{
+    width: auto;
+}
+
+main section:nth-child(2) .section-2--flex-container{
+    flex-direction: column;
+}
+
+main section:nth-child(2) img{
+    display: inline-block;
+    float: left;
+    margin-right: 3.5rem;
+}
+
+main section:nth-child(2) h3{
+    margin-top: 5rem;
+    text-align: left;
+}
+
+main section:nth-child(2) p{
+    text-align: left;
+}
+}
+
+@media only screen and (max-width: 860px) {
+main section:nth-child(2) img{
+    margin-right: 0;
+}
+}
+
+@media only screen and (max-width: 768px) {
+main section:nth-child(2) h2{
+    position: relative;
+    padding-bottom: 1.3rem;
+    font-size: 5rem;
+}
+
+main section:nth-child(2) .section-2--flex-container{
+    padding: 0;
+}
+
+main section:nth-child(2) img{
+    width: auto;
+    float: none;
+    display: block;
+    margin: auto;
+}
+
+main section:nth-child(2) h3{
+    text-align: center;
+}
+
+main section:nth-child(2) p{
+    text-align: center;
+    margin-bottom: 4.7rem;
+}
+}
+
+main section:nth-child(3){
+    height: 57.7rem;
+    padding: 0 8rem;
+    background-color: #2C343E;
+    margin-bottom: 20rem;
+}
+
+main section:nth-child(3) .text-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section:nth-child(3) h3{
+    color: white;
+    padding-top: 11rem;
+    font-family: "Fraunces" 9pt;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 1.2em;
+    letter-spacing: 0px;
+}
+
+main section:nth-child(3) .text-flex p{
+    color: white;
+    width: 540px;
+    padding-top: 3.2rem;
+    font-family: "Barlow";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 1.7em;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 8.6rem;
+}
+
+main section:nth-child(3) .section-3--flex-container-card{
+    display: flex;
+    justify-content: space-around;
+}
+
+main section:nth-child(3) .section-3--card{
+    width: 350px;
+    border-radius: 8px;
+    padding: 7.2rem 4.8rem 4.8rem;
+    background-color: #0E8784;
+    margin: 0 1.2rem 2.4rem;
+}
+
+main section:nth-child(3) .section-3--card img{
+    display: block;
+    margin: auto;
+    margin-bottom: 5.6rem;
+}
+
+main section:nth-child(3) .section-3--card h4{
+    font-family: "Fraunces" 9pt;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+main section:nth-child(3) .section-3--card p{
+    font-family: "Barlow";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 1.7em;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1380px) {
+main section:nth-child(3){
+    margin-bottom: 70rem;
+}
+
+    .section-3--flex-container-card{
+    flex-direction: column;
+}
+
+main section:nth-child(3) h3{
+    width: auto;
+    font-size: 24px;
+}
+
+main section:nth-child(3) .text-flex p{
+    width: auto;
+    font-size: 1.5rem;
+}
+
+main section:nth-child(3) .section-3--card{
+    width: auto;
+}
+
+main section:nth-child(3) .section-3--card img{
+    margin-right: 5rem;
+    display: inline-block;
+    float: left;
+}
+    
+main section:nth-child(3) .section-3--card{
+    display: inline-block;
+}
+
+main section:nth-child(3) .section-3--card{
+    display: inline-block;
+}
+}
+
+@media only screen and (max-width: 750px) {
+main section:nth-child(3){
+    margin-bottom: 110rem;
+}
+
+main section:nth-child(3) {
+    padding: 0 1rem;
+}
+
+main section:nth-child(3) .section-3--flex-container-card{
+    flex-direction: column;
+}
+
+main section:nth-child(3) .section-3--card{
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(3) .section-3--card img{
+    margin: auto;
+    margin-bottom: 5.6rem;
+}
+}
+
+@media only screen and (max-width: 420px){
+main section:nth-child(3){
+    margin-bottom: 140rem;
+}
+}
+
+@media only screen and (max-width: 320px){
+main section:nth-child(3){
+    margin-bottom: 180rem;
+}
+}
+
+main section:nth-child(4){
+    padding: 0 8rem;
+    margin-bottom: 20rem;
+}
+
+main section:nth-child(4) .section-about{
+    font-family: "Fraunces" 9pt;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 3.2rem ;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #83888F;
+    margin-bottom: 8rem;
+}
+
+main section:nth-child(4) .flex-container-oval{
+    background-color: gold;
+    height: 2px;
+    width: 75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section:nth-child(4) .container--last-section-child-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+main section:nth-child(4) .container--last-section-child-text h3{
+    font-family: "Fraunces" 9pt;
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 1em;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FDD6BA;
+    margin-top: 6.7rem;
+    margin-bottom: 3.8rem;
+}
+
+main section:nth-child(4) .container--last-section-child-text h2{
+    font-family: "Fraunces" 9pt;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 1.2em;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 4.2rem;
+    width: 20rem;
+
+}
+
+main section:nth-child(4) .container--last-section-child-text p{
+    font-family: "Barlow";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 25rem;
+}
+
+main section:nth-child(4) button{
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1.5rem 3rem;
+    background-color: #0E8784;
+    margin-top: 6.4rem;
+    font-size: 18px;
+    font-family: "Fraunces" 9pt;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FEFCF7;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 920px) {
+main section:nth-child(4) .flex-container-oval{
+    width: auto;
+}
+
+main section:nth-child(4) .container--last-section-child-text{
+    flex-direction: column;
+}
+}
+
+@media only screen and (max-width: 560px){
+main section:nth-child(4){
+    padding: 0 2rem;
+}
+
+main section:nth-child(4) .section-about{
+    text-align: center;
+}
+
+main section:nth-child(4) .flex-container-oval{
+    display: none;
+}
+
+main section:nth-child(4) .section-about{
+    margin-bottom: 2rem;
+}
+
+main section:nth-child(4) .container--last-section-child-text h2{
+    width: auto;
+    text-align: center;
+}
+
+main section:nth-child(4) .container--last-section-child-text h3{
+    width: auto;
+    text-align: center;
+}
+
+main section:nth-child(4) .container--last-section-child-text  p{
+    width: auto;
+    text-align: center;
+    }
+}
+
+footer{
+    background-color: #2C343E;
+    padding: 0 8rem;
+    margin-bottom: 8.8rem;
+}
+
+footer .felx-container__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .felx-container__footer div:first-child{
+    display: flex;
+}
+
+footer .felx-container__footer div:first-child img:first-child{
+    width: 50px;
+    height: 50px;
+}
+
+footer .felx-container__footer div:nth-child(2) a{
+    padding: 0 3.3rem;
+}
+
+footer .felx-container__footer .footer-last-img img{
+    margin: 0 1.5rem;
+    width: 24px;
+    height: 24px;
+}
+
+@media only screen and (max-width: 1100px) {
+    footer .felx-container__footer{
+        display: block;
+}
+
+footer .felx-container__footer div:first-child{
+    padding-top: 5.4rem;
+    margin-bottom: 3.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer .felx-container__footer div:nth-child(2){
+    display: flex;
+    justify-content: space-around
+}
+
+footer .felx-container__footer .footer-last-img {
+    display: flex;
+    justify-content: center;
+}
+
+footer .felx-container__footer div:nth-child(2) a{
+    padding: 0;
+}
+
+footer .felx-container__footer div:last-child{
+    margin-top: 6.6rem;
+    padding-bottom: 5.6rem;
+}
+}
+
+@media only screen and (max-width: 440px) {
+footer .felx-container__footer div:nth-child(2) {
+    display: block;
+}
+
+footer .felx-container__footer div:nth-child(2) a{
+    display: block;
+    text-align: center;
+     margin: 12px 0;
+}
+}
